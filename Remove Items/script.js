@@ -10,8 +10,8 @@ function removeItems(array, arrayItem) {
         array.splice(i, 1);
       }
     }
-    console.log(array);
   }
+  console.log(array.length);
 }
 
 removeItems(array, arrayItem);
