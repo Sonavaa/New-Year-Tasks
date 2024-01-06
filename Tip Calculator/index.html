@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="tip-total">
+      <div class="tip-bar">
+        <div class="tip-person">
+          <div class="tip">TIP:</div>
+          <div class="person"><span>/</span> Person</div>
+        </div>
+        <div class="amount">$<span>15.0</span></div>
+      </div>
+      <div class="tip-bar">
+        <div class="total-person">
+          <div class="total">TOTAL:</div>
+          <div class="person"><span>/</span> Person</div>
+        </div>
+        <div class="amount">$<span>165.0</span></div>
+      </div>
+    </div>
+    <div class="bill-tip">
+      <p>Bill</p>
+      <span>300.00</span>
+      <p>Tip</p>
+      <div class="quantity">
+        <img src="./assets/icons/remove.svg" alt="" />
+        <span>10%</span>
+        <img src="./assets/icons/add.svg" alt="" />
+      </div>
+      <p>No. of People</p>
+      <div class="quantity">
+        <img src="./assets/icons/remove.svg" alt="" />
+        <span>2</span>
+        <img src="./assets/icons/add.svg" alt="" />
+      </div>
+    </div>
+  </body>
 </html>

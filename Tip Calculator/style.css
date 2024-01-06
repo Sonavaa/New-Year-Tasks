@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #6db3b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.tip-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 70px 50px 30px;
+  gap: 30px;
+}
+.tip-total .tip-bar {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tip-total .tip-bar .tip-person {
+  display: flex;
+  flex-direction: column;
+}
+.tip {
+  color: #000;
+  font-size: 32px;
+}
+.person {
+  color: #9eadaf;
+  font-size: 16px;
+  font-weight: 600;
+  left: 0;
+}
+.amount {
+  color: #4e4e4e;
+  font-size: 32px;
+}
+.tip-bar .total-person {
+  display: flex;
+  flex-direction: column;
+}
+.total {
+  color: #000;
+  font-size: 32px;
+}
+.bill-tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2b3841;
+  padding: 20px 30px 40px;
+  gap: 10px;
+  color: #cee7e4;
+  font-size: 20px;
+  font-weight: 600;
+}
+.bill-tip p {
+  display: flex;
+  align-self: start;
+}
+.bill-tip span {
+  width: 340px;
+  background-color: #35BEB8;
+  height: 42px;
+}
+.bill-tip .quantity {
+  width: 340px;
+  display: flex;
+  background-color: #fff;
+  height: 42px;
+}
+.bill-tip .quantity img{
+background-color: #7AE8D9;
+color: #FFF;
+padding: 0 9px;
+  }
+.bill-tip  span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
