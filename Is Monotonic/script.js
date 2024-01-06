@@ -12,10 +12,10 @@ function isMonotonic(arrNums) {
     let isMonotonicDecreasing = true;
 
     for (let i = 0; i < arrNums.length - 1; i++) {
-        if (arrNums[i] > arrNums[i + 1]) {
+        if (arrNums[i] < arrNums[i + 1]) {
             isMonotonicIncreasing = false;
         }
-        if (arrNums[i] < arrNums[i + 1]) {
+        if (arrNums[i] > arrNums[i + 1]) {
             isMonotonicDecreasing = false;
         }
     }
