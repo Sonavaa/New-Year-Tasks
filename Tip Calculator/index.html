@@ -14,33 +14,34 @@
       <div class="tip-bar">
         <div class="tip-person">
           <div class="tip">TIP:</div>
-          <div class="person"><span>/</span> Person</div>
+          <div class="person">/ Person</div>
         </div>
-        <div class="amount">$<span>15.0</span></div>
+        <div class="amount tip-amount">$<span>0.0</span></div>
       </div>
       <div class="tip-bar">
         <div class="total-person">
           <div class="total">TOTAL:</div>
-          <div class="person"><span>/</span> Person</div>
+          <div class="person">/ Person</div>
         </div>
-        <div class="amount">$<span>165.0</span></div>
+        <div class="amount total-amount">$<span>165.0</span></div>
       </div>
     </div>
     <div class="bill-tip">
       <p>Bill</p>
-      <span>300.00</span>
+      <span id="bill">300.00</span>
       <p>Tip</p>
       <div class="quantity">
-        <img src="./assets/icons/remove.svg" alt="" />
-        <span>10%</span>
-        <img src="./assets/icons/add.svg" alt="" />
+        <img id="minus1" src="./assets/icons/remove.svg" alt="" />
+        <span id="tip-percent"><span>0</span>%</span>
+        <img id="plus1" src="./assets/icons/add.svg" alt="" />
       </div>
       <p>No. of People</p>
       <div class="quantity">
-        <img src="./assets/icons/remove.svg" alt="" />
-        <span>2</span>
-        <img src="./assets/icons/add.svg" alt="" />
+        <img id="minus2" src="./assets/icons/remove.svg" alt="" />
+        <span id="person-count">1</span>
+        <img id="plus2" src="./assets/icons/add.svg" alt="" />
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

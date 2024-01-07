@@ -69,7 +69,17 @@ body {
   display: flex;
   align-self: start;
 }
-.bill-tip span {
+.bill-tip #bill{
+  width: 340px;
+  background-color: #35BEB8;
+  height: 42px;
+}
+.bill-tip #tip-percent {
+  width: 340px;
+  background-color: #35BEB8;
+  height: 42px;
+}
+.bill-tip #person-count {
   width: 340px;
   background-color: #35BEB8;
   height: 42px;
