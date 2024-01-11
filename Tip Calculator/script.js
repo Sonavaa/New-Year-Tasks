@@ -57,8 +57,15 @@ person_plus_btn.addEventListener("click", () => {
   tip_amount = tip_amount / person_count;
   tip_amount_el.textContent = tip_amount;
   
-  total_amount = total_amount / person_count;
+  total_amount = total_amount / person_count
+  if(total_amount% Math.trunc(total_amount) < 1){
     total_amount_el.textContent = total_amount;
+    total_amount_el.textContent = total_amount_el.textContent.substring(0, 5)
+  }
+  else{
+    total_amount_el.textContent = total_amount;
+  }
+  total_amount = total_amount * person_count
 });
 
 person_minus_btn.addEventListener("click", () => {
@@ -66,11 +73,18 @@ person_minus_btn.addEventListener("click", () => {
     person_count--;
     person_count_el.textContent = person_count;
 
-    tip_amount = tip_amount * (person_count+1);
+    tip_amount = tip_amount * (person_count + 1);
     tip_amount_el.textContent = tip_amount;
 
-    total_amount = total_amount * (person_count+1);
-    total_amount_el.textContent = total_amount;
+    total_amount = total_amount / person_count
+    if(total_amount% Math.trunc(total_amount) < 1){
+      total_amount_el.textContent = total_amount;
+      total_amount_el.textContent = total_amount_el.textContent.substring(0, 5)
+    }
+    else{
+      total_amount_el.textContent = total_amount;
+    }
+    total_amount = total_amount * person_count
   }
 });
 
